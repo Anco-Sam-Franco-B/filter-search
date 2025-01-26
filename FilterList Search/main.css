@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.conatiner{
+    width: 100%;
+    height: 100vh;
+    background: #ebeef1;
+    overflow: hidden;
+}
+.container .header{
+    width: 100%;
+    background: rgba(255, 68, 0, 0.699);
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .contents{
+    width: 100%;
+    height: 80.5%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .contents .box{
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    height: 600px;
+    overflow: hidden;
+}
+.container .contents .box .box-header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(255, 68, 0, 0.699);
+    border-radius: 20px;
+    color: #fff;
+    margin: 10px auto;
+}
+.container .contents .box .box-header .link a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.container .contents .box .box-header .link a:hover{
+    transition: all 0.5s;
+    padding: 10px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgba(255, 68, 0, 0.699);
+}
+.container .contents .box .main-box{
+    width: 100%;
+}
+.container .contents .box .main-box .search-input-box{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+.container .contents .box .main-box .search-input-box input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #777;
+    outline: none;
+    transition: all 0.5s;
+}
+.container .contents .box .main-box .search-input-box input:focus{
+    background: #dddddd21;
+    transition: all 0.5s;
+}
+.container .contents .box .main-box .lists-box{
+    width: 100%;
+    padding: 20px;
+    height: 79%;
+    overflow-y: scroll;
+    margin: 20px auto;
+}
+.container .contents .box .main-box .lists-box::-webkit-scrollbar{
+    width: 10px;
+}
+.container .contents .box .main-box .lists-box::-webkit-scrollbar-thumb{
+    background: rgba(255, 68, 0, 0.699);
+    border-radius: 20px;
+}
+.container .contents .box .main-box .lists-box ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .contents .box .main-box .lists-box ul li{
+    color: #666;
+    padding: 10px;
+    border-bottom: 1px solid #e4e3e3;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .contents .box .main-box .lists-box ul li a{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(255, 68, 0, 0.699);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 10px;
+    transition: all 1s;
+}
+.container .contents .box .main-box .lists-box ul li a:hover{
+    transition: all 1s;
+    background: #ea3515;
+}
+.container .contents .box .main-box .lists-box ul li:hover{
+    font-weight: 700;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: none;
+    background: #dddddd3a;
+    border-radius: 20px;
+}
+.container .contents .box .main-box .lists-box ul li:last-child{
+    border-bottom: none;
+}
+::selection{
+    background: rgba(255, 68, 0, 0.699);
+    color: #fff;
+}
+.form{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 89%;
+    flex-direction: column;
+    gap: 20px;
+}
+.input{
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+button{
+    padding: 11px 24px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 68, 0, 0.699);
+    color: #fff;
+    font-weight: 666;
+    width: 70%;
+    transition: all 1s;
+    box-shadow: 0 0 1px rgba(0,0,0,0.4);
+    font-size: 15px;
+}
+button:hover{
+    transition: all 1s;
+    background: #ebeef1;
+    color: rgba(255, 68, 0, 0.699);
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+}
+form h1{
+    color: #666;
+}
